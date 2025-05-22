@@ -94,16 +94,10 @@ server: {
 }
 ```
 
----
 
 ## 🙋‍♂️ Author
 
-**Poco** — AI & Robotics Enthusiast  
-📧 your-email@example.com  
-🌐 GitHub | LinkedIn
+"pratibha singh"  
+📧 your-13pratibhasingh45@gmail.com 
+🌐 GitHub-pratibha6-ai
 
----
-
-## 🪪 License
-
-[MIT](LICENSE)
