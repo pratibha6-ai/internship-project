@@ -1,0 +1,149 @@
+/* Global resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  background-color: #0080FF;
+  color: #fff;
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+/* Chat container */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+/* Header styling */
+.header {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Messages layout */
+.messages {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px 0;
+  gap: 15px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.userMsg, .responseMsg {
+  background-color: #181818;
+  padding: 15px 20px;
+  border-radius: 20px;
+  max-width: 65%;
+  word-wrap: break-word;
+  font-size: 16px;
+}
+
+.userMsg {
+  align-self: flex-end;
+  color: #00FFAB;
+}
+
+.responseMsg {
+  align-self: flex-start;
+  color: #FFD700;
+}
+
+/* Chat suggestions */
+.middle {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #181818;
+  padding: 20px;
+  border-radius: 16px;
+  min-width: 220px;
+  max-width: 260px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #2a2a2a;
+  transform: scale(1.03);
+}
+
+/* Input area */
+.bottom {
+  width: 100%;
+  padding: 20px 0;
+  position: sticky;
+  bottom: 0;
+  background: #0080FF;
+  z-index: 10;
+}
+
+.inputBox {
+  background-color: #181818;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  max-width: 800px;
+  padding: 10px 15px;
+  margin: 0 auto;
+}
+
+.inputBox input {
+  background: transparent;
+  flex: 1;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+}
+
+.inputBox i {
+  font-size: 24px;
+  color: #00FFAB;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Footer note */
+.bottom p {
+  text-align: center;
+  font-size: 13px;
+  color: #e0e0e0;
+  margin-top: 10px;
+}
